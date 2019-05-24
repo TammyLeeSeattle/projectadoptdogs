@@ -1,0 +1,35 @@
+{
+  "name": "projectadoptdogs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "react-scripts test --env=jsdom",
+    "build": "react-scripts build && mv build server",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:3001",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TammyLeeSeattle/projectadoptdogs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TammyLeeSeattle/projectadoptdogs/issues"
+  },
+  "homepage": "https://github.com/TammyLeeSeattle/projectadoptdogs#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
+    "express": "^4.17.0",
+    "mongodb": "^3.2.6",
+    "mongoose": "^5.5.11",
+    "morgan": "^1.9.1",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.8",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0"
+  }
+}
