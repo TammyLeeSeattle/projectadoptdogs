@@ -7,7 +7,6 @@
 
 // DEPENDENCIES
 const db = require("../models/index")
-require("./mongo").connecct();
 
 // DEFINE METHODS FOR routes > userprofile.js (so the front-end can use these routes)
 
@@ -28,12 +27,12 @@ function getUsers(req, res) {
 // to CREATE a new user
 function postUser(req, res) {
     const originalUser = { 
-        uid: req.body.uid, 
+        id: req.body.id, 
         firstName: req.body.firstName,
         lastName: req.body.lastName, 
         contactEmail: req.body.contactEmail 
     };
-    const user = new User(originalUser);
+    const user = new db.User(originalUser);
     user.save(err => {
       if (checkServerError(res, err)) return;
       res.status(201).json(user);

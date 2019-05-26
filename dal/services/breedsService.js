@@ -11,8 +11,6 @@
 
 const Breed = require("./../models/breedSchema");
 
-require("./mongo").connect();
-
 function getBreeds (req, res) {
     const docquery = Breed.find({});
     docquery

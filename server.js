@@ -11,7 +11,7 @@
   const bodyParser = require("body-parser");
 
   // Internal to the application
-  // const routes = require("./routes");
+  const routes = require("./routes");
  
 
 // CONNECTIONS AND DEFINITIONS
@@ -25,7 +25,7 @@
   app.use(express.static(path.join(__dirname, './client/build')));
 
   // Add routes, both API and view
-  // app.use(routes);
+  app.use(routes);
 
   require("./dal/connection").connect();
 
