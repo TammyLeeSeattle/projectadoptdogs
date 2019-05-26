@@ -1,5 +1,11 @@
+/* AIM OF FILE:
+
+    - Routing to get breed dictionary from Cosmos
+
+*/
+
 const router = require("express").Router();
-const Breed = require("../dal/models/breedSchema");
+const Breed = require("../../dal/models/breedSchema");
 
 /*
  * URL: localhost:3001/api/breeds/

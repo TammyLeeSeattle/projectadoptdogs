@@ -1,3 +1,11 @@
+/*
+AIM OF THIS FILE:
+
+  - establish the schema definition for a "breed"
+  - this will be the thing that allows us to calculate breed compatibility
+
+*/
+
 // ORM requirement
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;

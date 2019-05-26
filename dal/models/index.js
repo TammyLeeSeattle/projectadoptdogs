@@ -1,3 +1,4 @@
 module.exports = {
-    Breed: require("./breed")
+    Breed: require("./breed"),
+    User: require("./user")
 }; 

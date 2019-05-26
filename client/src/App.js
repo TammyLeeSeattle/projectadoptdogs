@@ -26,7 +26,7 @@ class App extends Component {
       console.log('callaback', this.props.location);
         mainComp = <Callback/>;
         break;
-      case '/secret':
+      case '/profile':
         console.log('auth?',this.props.auth.isAuthenticated )
         mainComp= this.props.auth.isAuthenticated() ? <Secret {...this.props} /> : <NotFound/>;
         break;

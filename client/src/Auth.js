@@ -4,7 +4,7 @@
   import jwtDecode from 'jwt-decode';
   var dotenv = require('dotenv');
   dotenv.config();
-  const LOGIN_SUCCESS = '/secret';
+  const LOGIN_SUCCESS = '/profile';
   const LOGIN_FAILURE = '/';
   
   export default class Auth {
