@@ -39,7 +39,7 @@ function Nav(props) {
               </li>
               {/* <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="medium material-icons right">account_circle</i></a></li> */}
 
-              {!props.auth.isAuthenticated() ? (
+              {!props.auth.isAuthenticated() ? 
                 <li>
                   <a
                     href="#"
@@ -50,7 +50,7 @@ function Nav(props) {
                     Log In
                   </a>
                 </li>
-              ) : (
+               : 
                 <li>
                   <a
                     class="dropdown-trigger"
@@ -62,17 +62,6 @@ function Nav(props) {
                     </i>
                   </a>
                 </li>
-              )
-
-              // <li>
-              // <a href="#" onClick={props.auth.logout}
-              //       className="white-text"
-              //       id="logout"
-              //     >
-              //       Log Out
-
-              //   </a>
-              // </li>
               }
             </ul>
           </div>
