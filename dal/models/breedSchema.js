@@ -35,6 +35,8 @@ const breedSchema = new Schema({
   // for pictures after MVP: https://thedogapi.com/
   // description: String
 
+}, {
+  collection: "Breeds"
 });
 
 const Breed = mongoose.model("Breed", breedSchema);

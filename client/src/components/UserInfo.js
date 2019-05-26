@@ -1,5 +1,12 @@
 import React from "react";
 import Auth from "auth0-js";
+import Button from "@material-ui/core/Button"
+import IconLabelButtons from "./ButtonwithIcon"
+const Axios = require("axios");
+
+function saveUser () {
+
+}
 
 function UserInfo(props){
     return(
@@ -32,6 +39,9 @@ function UserInfo(props){
             </div>
           </div>
         </form>
+
+        <IconLabelButtons />
+
       </div>
     </div>
     )

@@ -11,12 +11,17 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 //defining the schema for a user's Profile
-const userSchema = new Schema ({
-    id: { type: String, required: true },
+const userSchema = new Schema (
+  {
+    id: { type: String, required: true, unique: true },
     firstName: { type: String, required: true },
     lastName: { type: String, required: true },
     contactEmail: { type: String, required: true }
-});
+  },
+  {
+    collection: "Users"
+  }
+);
 
 const User = mongoose.model("User", userSchema)
 

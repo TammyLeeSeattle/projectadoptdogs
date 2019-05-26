@@ -21,27 +21,6 @@ class Secret extends Component {
           <p> Please take moment to fill out the following </p>
           <br />
           <UserInfo {...this.props}/>
-
-          {/* <div class="row">
-            <div class="col s12 m7">
-              <div class="card">
-                <div class="card-image">
-                  <img src={this.props.picture} className="circle responsive-img"/> */}
-
-                  {/*       
-                <div class="card-content">
-                  <p>Name:{this.props.name}.</p>
-                  <p>Nick Name:{this.props.nickname}.</p>
-                </div>
-
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-               */}
-                {/* </div>
-              </div>
-            </div>
-          </div> */}
         </div>
         <Footer/>
       </div>
