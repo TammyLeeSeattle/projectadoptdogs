@@ -1,26 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import Main from './components/Main';
+import Secret from './components/Secret';
+import NotFound from './components/Notfound';
+import Callback from './components/Callback';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faExclamationCircle} from '@fortawesome/free-solid-svg-icons';
+import { faPaw} from '@fortawesome/free-solid-svg-icons';
 
-function App() {
+library.add(faExclamationCircle,faPaw)
+
+class App extends Component {
+  render() {
+    let mainComp = '';
+    console.log(this.props)   
+    console.log(window.location.pathname)
+    switch(window.location.pathname){
+      case '/':
+        mainComp= <Main {...this.props}/>;
+        break;
+      case '':
+        mainComp= <Main {...this.props}/>;
+        break;
+      case '/callback':
+      console.log('callaback', this.props.location);
+        mainComp = <Callback/>;
+        break;
+      case '/secret':
+        console.log('auth?',this.props.auth.isAuthenticated )
+        mainComp= this.props.auth.isAuthenticated() ? <Secret {...this.props} /> : <NotFound/>;
+        break;
+        
+      default:
+        mainComp= <NotFound />;
+   };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+     
+      {mainComp}
+
     </div>
   );
-}
-
+  }
+};
 export default App;
