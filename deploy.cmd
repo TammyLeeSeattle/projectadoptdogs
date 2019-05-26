@@ -108,7 +108,7 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
 :: 4. Build the website
 pushd "%DEPLOYMENT_TARGET%"
 echo "Building web site"
-call :ExecuteCmd cd "/client"
+call :ExecuteCmd cd "%DEPLOYMENT_TARGET%/client"
 call :ExecuteCmd !NPM_CMD! install --production
 call :ExecuteCmd !NPM_CMD! run build
 if !ERRORLEVEL! NEQ 0 goto error
