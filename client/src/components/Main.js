@@ -18,7 +18,7 @@ class Main extends Component {
                 <img src={icon} id='pawIcon'alt='icon'></img>
             </h1>
             <h3>
-              <p className='flow-text'> One in five dogs never leave their shelter.
+              <p className='flow-text'> One in Five dogs never leave the shelter
                 <br/>
                 Let's adopt better!
               </p> 

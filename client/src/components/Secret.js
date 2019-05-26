@@ -3,6 +3,7 @@ import logo from "../logo.svg";
 import Nav from "./Nav";
 import Auth from "../Auth";
 import UserInfo from "./UserInfo";
+import Footer from "./Footer";
 
 class Secret extends Component {
   render() {
@@ -21,7 +22,28 @@ class Secret extends Component {
           <br />
           <UserInfo {...this.props}/>
 
+          {/* <div class="row">
+            <div class="col s12 m7">
+              <div class="card">
+                <div class="card-image">
+                  <img src={this.props.picture} className="circle responsive-img"/> */}
+
+                  {/*       
+                <div class="card-content">
+                  <p>Name:{this.props.name}.</p>
+                  <p>Nick Name:{this.props.nickname}.</p>
+                </div>
+
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+               */}
+                {/* </div>
+              </div>
+            </div>
+          </div> */}
         </div>
+        <Footer/>
       </div>
     );
   }
