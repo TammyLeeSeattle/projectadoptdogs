@@ -1,15 +1,15 @@
 import React from "react";
 import Auth from "../Auth";
 import { indigo } from "@material-ui/core/colors";
-  const styles = {
-    navHome:{
-      color:'white'
-    },
-    navOther: {
-      color:'indigo'
+  // const styles = {
+  //   navHome:{
+  //     color:'white'
+  //   },
+  //   navOther: {
+  //     color:'indigo'
 
-    }
-  };
+  //   }
+  // };
 
 function Nav(props) {
   console.log("nav", props);
@@ -22,7 +22,7 @@ function Nav(props) {
             <i class="material-icons right">account_circle</i>
           </a>
           <li>
-            <a href="#!">one</a>
+            <a href="#">one</a>
           </li>
           <li>
             <a

@@ -6,13 +6,12 @@ import auth0 from 'auth0-js';
 import jwtDecode from 'jwt-decode';
 var dotenv = require('dotenv');
 dotenv.config();
-const LOGIN_SUCCESS = '/secret';
+const LOGIN_SUCCESS = '/profile';
 const LOGIN_FAILURE = '/';
 const logoutDomain = 'https://dev-67ou39ym.auth0.com/v2/logout';
 
 
 export default class Auth {
- 
  
   auth0 = new auth0.WebAuth({
     // domain: process.env.AUTH0_DOMAIN,

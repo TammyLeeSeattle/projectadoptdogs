@@ -18,7 +18,10 @@ function UserInfo(props) {
               {props.name ? (
                 <input
                   placeholder={props.name}
+                  onChange= {props.handleInputChange}
                   id="first_name"
+                  firstName='firstName'
+                  value={props.firstName}
                   type="text"
                   className="validate"
                 />
@@ -27,13 +30,21 @@ function UserInfo(props) {
               )}
             </div>
             <div className="input-field col s6">
-              <input id="last_name" type="text" className="validate" />
+              <input id="last_name" type="text" 
+              lastName = 'lastName'
+              value= {props.lastName}
+              onChange= {props.handleInputChange}
+              className="validate" />
               <label for="last_name">Last Name</label>
             </div>
           </div>
           <div className="row">
             <div className="input-field col s12">
-              <input id="email" type="email" className="validate" />
+              <input id="email" type="email" 
+              email='email'
+              value={props.email}
+              onChange={props.handleInputChange}
+              className="validate" />
               <label for="email">Email</label>
             </div>
           </div>
@@ -44,7 +55,7 @@ function UserInfo(props) {
             </label>
           </p>
         </form>
-        <IconLabelButtons />
+        <IconLabelButtons onClick={props.handleFormSubmit}/>
       </div>
     </div>
   );
