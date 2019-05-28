@@ -1,17 +1,21 @@
 body {
-  background-color:#555;
+  background-color:white;
+  font-family: 'Fresca', sans-serif;
 }
 .navbar-fixed {
   position: absolute;z-index:999999999;
 }
-.flow-text{
-  font-size: 40px;
-  font-family: 'Fresca', sans-serif;
+h3.flow-text{
+  font-size: 36px;
+  color:white;
+  margin-top:100px;
+  margin-left:180px;
+  /* font-family: 'Fresca', sans-serif; */
   /* font-family: 'Open Sans', sans-serif; */
 }
 h1 {
   font-family: 'Fredoka One', cursive;
-  
+  margin-right:-100px;
 }
 #background {
   /* margin-top: 25px; */
@@ -33,11 +37,6 @@ h1{
   font-size:80px;
   font-weight: bold;
   color:white;
-}
-h3 {
-  color:white;
-  margin-top:150px;
-  margin-left:180px;
 }
 
 #login, #logout {
@@ -85,7 +84,7 @@ h3 {
   margin-top:300px;
 }
 a nav-item {
-  font-size:24px;
+  font-size:30px;
   
 }
 nav {
@@ -94,7 +93,9 @@ nav {
 .navbar-fixed{
   color:#aaa !important;
 }
-
+ul.right.hide-on-med-and-down {
+  margin-right:80px;
+}
 .notFoundLink{
  
   margin-left: 50%;

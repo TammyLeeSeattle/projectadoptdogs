@@ -1,8 +1,19 @@
 import React from "react";
 import Auth from "../Auth";
+import { indigo } from "@material-ui/core/colors";
+  const styles = {
+    navHome:{
+      color:'white'
+    },
+    navOther: {
+      color:'indigo'
+
+    }
+  };
 
 function Nav(props) {
   console.log("nav", props);
+
   return (
     <div className="navbar-fixed">
       <nav className="transparent z-depth-0">
@@ -31,12 +42,13 @@ function Nav(props) {
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
               <i class="material-icons">menu</i>
             </a>
-            <a href="#" class="brand-logo">
+          
+:             <a href="/" class="brand-logo">
               A Dog's Home{" "}
             </a>
-            <ul class="right hide-on-med-and-down">
+            <ul class="right hide-on-med-and-down ">
               <li>
-                <a href="sass.html" class='indigo-text text-darken-4'>About Us</a>
+                <a href="/AboutUs" class='indigo-text text-darken-4'>About Us</a>
               </li>
               {/* <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="medium material-icons right">account_circle</i></a></li> */}
 
@@ -54,7 +66,7 @@ function Nav(props) {
               ) : (
                 <li>
                   <a class="dropdown-trigger" href="#!" data-target="dropdown1">
-                    <i class="medium material-icons right">account_circle</i>
+                    <i class="medium blue-text material-icons right">account_circle</i>
                   </a>
                 </li>
               )}

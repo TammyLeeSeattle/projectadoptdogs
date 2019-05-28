@@ -17,11 +17,10 @@ class Main extends Component {
                 A Dog's Love
                 <img src={icon} id='pawIcon'alt='icon'></img>
             </h1>
-            <h3>
-              <p className='flow-text'> One in Five dogs never leave the shelter
+            <h3 className='flow-text'> One in Five dogs never leave the shelter
                 <br/>
                 Let's adopt better!
-              </p> 
+            
             </h3>
         {/* {!this.props.auth.isAuthenticated()&& */}
         {/* <div> */}
