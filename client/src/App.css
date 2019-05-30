@@ -79,6 +79,7 @@ h1{
   height: 40vmin;
 
 }
+/* ------------------------------- */
 
 .welcomeMsg img{
   width:100px;
@@ -114,6 +115,13 @@ ul.right.hide-on-med-and-down {
 }
 #icon {
   margin-left:50%;
+}
+/* .input-field input[type=text]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+} */
+.input-field input[type=text]:focus + label {
+  color: #3f51b5;
 }
 
 /* footer */

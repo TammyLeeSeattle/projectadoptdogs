@@ -16,12 +16,16 @@ class UserInput extends Component{
       email : ''
     }
 
-    createUser = input => {
-      API.postUser(input)
-        .then(res => {
+    createUser = () => {
+      API.postUser({
+        // the key is what serves sees and the value is what is defined in the state
+        firstName : this.state.firstName,
+        lastName : this.state.lastName,
+        contactEmail : this.state.email
+        
+      }).then(res => {
           console.log(res,"api-res");
-
-          this.setState({info:res.data});
+          // this.setState({res});
         })
         .catch(err => console.log(err))
     };
@@ -35,8 +39,7 @@ class UserInput extends Component{
     handleFormSubmit = event => {
         console.log('clicked?');
         event.preventDefault();
-              
-      //  this.createUser(this.state.info);
+       this.createUser();
     };
 
     render(){

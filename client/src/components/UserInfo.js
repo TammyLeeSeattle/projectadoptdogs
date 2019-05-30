@@ -11,21 +11,27 @@ function UserInfo(props) {
     <div className="row">
       <div className="col s12">
         <div className="row">
-          <div className="input-field col s6">
-            {props.name ? (
-              <input
-                placeholder={props.name}
-                // onChange={props.onChange}
-                id="first_name"
+          <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i> 
+          <input id="icon_prefix" type="text" name='firstName' onChange={props.onChange} class="validate"/>   
+          <label htmlFor="icon_prefix">First Name</label>
+          
+        </div>
+            {/* <i class="material-icons prefix">account_circle</i>
+            {props.name ? 
+              <input placeholder={props.name}id="first_name"
+                type="text"
                 name="firstName"
                 value={props.firstName}
-                type="text"
+                 
+                onChange={props.onChange}
                 className="validate"
               />
-            ) : (
-              <label htmlFor="first_name">First Name</label>
-            )}
-          </div>
+            : 
+              <label htmlFor="first_name">First Name
+              </label>   
+            }
+          </div> */}
           <div className="input-field col s6">
             <input
               id="last_name"
@@ -39,6 +45,7 @@ function UserInfo(props) {
           </div>
           <div className="row">
             <div className="input-field col s12">
+            <i class="material-icons prefix">email</i>
               <input
                 id="email"
                 type="email"

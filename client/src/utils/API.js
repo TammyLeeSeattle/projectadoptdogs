@@ -6,7 +6,8 @@ export default {
         return axios.get('/users');
     },
     postUser: function(input){
-        return axios.post('/api/userprofile/user',input);
         console.log('api input', input)
+        return axios.post('http://localhost:3001/api/userprofile/user',input);
+        
     }
 };

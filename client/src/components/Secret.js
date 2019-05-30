@@ -21,7 +21,7 @@ class Secret extends Component {
           <br />
           <UserInput />
         </div>
-        <Footer/>
+        <Footer />
       </div>
     );
   }
