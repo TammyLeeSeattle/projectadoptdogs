@@ -2,12 +2,11 @@ import React, { Component } from "react";
 import logo from "../logo.svg";
 import Nav from "./Nav";
 import Auth from "../Auth";
-import UserInfo from "./UserInfo";
+import UserInput from "./UserInput";
 import Footer from "./Footer";
 
 class Secret extends Component {
   render() {
-    console.log("getting here?");
     return (
       <div>
         <Nav {...this.props} />
@@ -20,7 +19,7 @@ class Secret extends Component {
           </div>
           <p> Please take moment to fill out the following </p>
           <br />
-          <UserInfo {...this.props}/>
+          <UserInput />
         </div>
         <Footer/>
       </div>

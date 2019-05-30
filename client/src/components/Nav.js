@@ -12,8 +12,6 @@ import { indigo } from "@material-ui/core/colors";
   // };
 
 function Nav(props) {
-  console.log("nav", props);
-
   return (
     <div className="navbar-fixed">
       <nav className="transparent z-depth-0">

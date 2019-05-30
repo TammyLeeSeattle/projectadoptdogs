@@ -7,7 +7,6 @@ import icon from '../paw_icon.png'
 
 class Main extends Component {
   render() {
-    console.log("test");
     return (
       <div id='background' className='responsive-img'>
           <div className="container-fluid">
