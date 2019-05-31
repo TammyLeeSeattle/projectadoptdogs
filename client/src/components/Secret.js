@@ -6,7 +6,9 @@ import UserInput from "./UserInput";
 import Footer from "./Footer";
 
 class Secret extends Component {
+
   render() {
+  
     return (
       <div>
         <Nav {...this.props} />
@@ -14,10 +16,15 @@ class Secret extends Component {
           <div className="welcomeMsg" style={{ marginTop: 20 }}>
             <span className="flow-text">
               Welcome, {this.props.name}
-              <img src={this.props.pic} className="circle responsive-img" />
             </span>
+           {this.props.pic ?
+            <img src={this.props.pic}  className="circle responsive-img" 
+            : style={{backgroundImage:'none'}}
+            />
+            } 
+            <p> Please take moment to fill out the following </p>
           </div>
-          <p> Please take moment to fill out the following </p>
+          
           <br />
           <UserInput />
         </div>

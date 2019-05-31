@@ -44,8 +44,9 @@ function UserInfo(props) {
             <label htmlFor="last_name">Last Name</label>
           </div>
           <div className="row">
-            <div className="input-field col s12">
-            <i class="material-icons prefix">email</i>
+            <div className="input-field col s12" style={{marginLeft:10}}>
+            {' '}
+            <i class="material-icons prefix" >email</i>
               <input
                 id="email"
                 type="email"

@@ -127,7 +127,7 @@ ul.right.hide-on-med-and-down {
 /* footer */
 body {
   display: flex;
-  min-height: 100vh;
+  min-height: 50vh;
   flex-direction: column;
 }
 
@@ -135,7 +135,7 @@ main {
   flex: 1 0 auto;
 }
 .page-footer.grey {
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
     
 @keyframes App-logo-spin {
