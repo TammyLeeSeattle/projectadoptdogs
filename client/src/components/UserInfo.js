@@ -22,8 +22,7 @@ function UserInfo(props) {
               <input placeholder={props.name}id="first_name"
                 type="text"
                 name="firstName"
-                value={props.firstName}
-                 
+                value={props.firstName}  
                 onChange={props.onChange}
                 className="validate"
               />
