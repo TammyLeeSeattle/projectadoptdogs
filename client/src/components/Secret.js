@@ -17,11 +17,8 @@ class Secret extends Component {
             <span className="flow-text">
               Welcome, {this.props.name}
             </span>
-           {this.props.pic ?
-            <img src={this.props.pic}  className="circle responsive-img" 
-            : style={{backgroundImage:'none'}}
-            />
-            } 
+        
+            <img src={this.props.pic}  className="circle responsive-img" />
             <p> Please take moment to fill out the following </p>
           </div>
           
