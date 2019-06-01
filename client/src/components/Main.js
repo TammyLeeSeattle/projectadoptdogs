@@ -18,7 +18,9 @@ class Main extends Component {
                 A Dog's Love
                 <img src={icon} id='pawIcon'alt='icon'></img>
             </h1>
-            <h3 className='flow-text'> One in Five dogs never leave the shelter
+            <h3 className='flow-text'> One in Five dogs<br/>
+                never leave the shelter
+                <br/>
                 <br/>
                 Let's adopt better!
             </h3>

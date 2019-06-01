@@ -44,7 +44,7 @@ function Nav(props) {
             </a>
           
              <a href="/" className="brand-logo">
-              A Dog's Home{" "}
+             {" "}
             </a>
             <ul className="right hide-on-med-and-down ">
               <li>
