@@ -39,9 +39,18 @@ app.use(routes);
 require("./dal/connection").connect();
 
   // send all requests to react
-  app.get("/", (req, res) => {
-    res.sendFile("index.html", { root: __dirname + "/client/build"});
+  app.get("/*", (req, res) => {
+
+    console.log(path.join(__dirname, './client/build'));
+    res.sendFile(path.join(__dirname + '/index.html'))
   });
+
+  app.get("/usersurvey", (req, res) => {
+
+    console.log(path.join(__dirname, './client/build'));
+    res.sendFile(path.join(__dirname + '/index.html'))
+  });
+
 
 // Start the API server
 app.listen(PORT, function() {

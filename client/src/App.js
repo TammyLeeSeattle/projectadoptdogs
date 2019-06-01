@@ -1,6 +1,5 @@
 
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 
 // STYLING COMPONENTS
@@ -88,7 +87,6 @@ class App extends Component {
 		console.log(this.props);
 		console.log(window.location.pathname);		
 		return (
-			<Router>
 			<div>
 				<div id='background' className={'responsive-img' + (this.showBackgroundImage() ? ' background-image' : '')}>
           			<div className="container-fluid">           
@@ -96,20 +94,10 @@ class App extends Component {
             				currentPage={this.state.currentPage}
             				handlePageChange={this.state.handlePageChange}
               			/>
-
-<Switch>
-          <Route exact path="/" render={(props) => <Main {...props} />} />
-          <Route exact path="/usersurvey" component={UserSurvey} />
-          <Route exact path="/about" component={AboutUs} />
-		  <Route exact path="/callback" component={Callback} />
-		  <Route exact path="/profile" component={Secret} />
-		  <Route exact path="/doglist"  render={(props) => <DogList {...props} chosenBreeds={QueryString.parse(window.location.search).chosenBreeds} />}/>
-        </Switch>
-					
+						{this.renderPage()}
 					</div>
       			</div>
 			</div>
-			</Router>
 		);
 	}
 }
