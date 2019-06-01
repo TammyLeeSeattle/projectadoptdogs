@@ -20,7 +20,7 @@ function Nav(props) {
             <i className="material-icons right">account_circle</i>
           </a>
           <li>
-            <a href="#">one</a>
+            <a href="#">My Profile</a>
           </li>
           <li>
             {props.auth &&
