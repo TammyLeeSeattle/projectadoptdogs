@@ -31,8 +31,6 @@ app.use(express.json());
   // Serve up static assets (usually on heroku)
   app.use(express.static(path.join(__dirname, './client/build')));
 
-
-
 // Add routes, both API and view
 app.use(routes);
 
