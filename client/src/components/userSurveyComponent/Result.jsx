@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { CSSTransitionGroup } from 'react-transition-group';
+import { CSSTransition } from 'react-transition-group';
 
 function Result(props) {
     return (
-      <CSSTransitionGroup
+      <CSSTransition
         className="container result"
         component="div"
         transitionName="fade"
@@ -14,9 +14,9 @@ function Result(props) {
         transitionAppearTimeout={500}
       >
         <div>
-          These are some breeds you might like!: <strong>{props.quizResult}</strong>!
+          These are some breeds you might like!: <h4>{props.quizResult}</h4>!
         </div>
-      </CSSTransitionGroup>
+      </CSSTransition>
     );
   }
   
@@ -24,4 +24,4 @@ function Result(props) {
     quizResult: PropTypes.string.isRequired
   };
   
-  export default Result;
+export default Result;

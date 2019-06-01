@@ -11,8 +11,8 @@ import '../App.css';
 import logo from '../logo.svg';
 import Question from '../components/userSurveyComponent/Question';
 import quizQuestions from '../api/quizQuestions';
-import Quiz from '../components/userSurveyComponent/Quiz'
-import Result from '../components/userSurveyComponent/Result'
+import Quiz from '../components/userSurveyComponent/Quiz';
+import Result from '../components/userSurveyComponent/Result';
 import Button from '@material-ui/core/Button';
 import Icon from '@material-ui/core/Icon';
 import axios from "axios";
@@ -108,7 +108,9 @@ class UserSurvey extends Component {
   }
 
   setResults (result) {
+    
     this.setState({ result: result[0] });
+    console.log(result);
   }
 
   //sendResults (result) {
@@ -148,7 +150,7 @@ class UserSurvey extends Component {
         <Result quizResult={this.state.result} />
         <Button variant="contained" color="primary" onClick={this.redirectToDogList}>
 				Search For Adoptable Dogs
-				<Icon >search</Icon>
+				<Icon>search</Icon>
 			</Button>
       </div>
     );
