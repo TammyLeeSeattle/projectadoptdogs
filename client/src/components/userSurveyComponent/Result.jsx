@@ -14,7 +14,7 @@ function Result(props) {
         transitionAppearTimeout={500}
       >
         <div>
-          These are some breeds you might like!: <h4>{props.quizResult}</h4>!
+          These are some breeds you might like: <h4>{props.quizResult}</h4>
         </div>
       </CSSTransition>
     );

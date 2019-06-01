@@ -149,7 +149,7 @@ class UserSurvey extends Component {
       <div>
         <Result quizResult={this.state.result} />
         <Button variant="contained" color="primary" onClick={this.redirectToDogList}>
-				Search For Adoptable Dogs
+				Search For Adoptable Dogs 
 				<Icon>search</Icon>
 			</Button>
       </div>

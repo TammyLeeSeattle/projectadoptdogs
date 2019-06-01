@@ -39,7 +39,7 @@ class DogList extends Component {
 
       render(){
           if (this.state.fetchedDogs == false){
-              return ( <div>loading</div>)
+              return ( <div>Finding dogs!</div>)
           }
           return (
               <div>
