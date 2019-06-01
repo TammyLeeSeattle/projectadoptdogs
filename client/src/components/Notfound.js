@@ -8,9 +8,10 @@ function NotFound (){
     return(
         <div>
             <h2 style={{textAlign:'center'}}>Oh no...</h2>
-            <FontAwesomeIcon id='icon' icon="exclamation-circle" size='4x'  />
+            <FontAwesomeIcon id='icon' icon="exclamation-circle" size='4x' />
             <div className='notFoundLink'><a href='/'>Go Back</a></div>
         </div>
     )
 }
 export default NotFound;
+

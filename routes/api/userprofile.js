@@ -9,14 +9,19 @@
 
 const express = require("express");
 const router = express.Router();
-const userService = require("./../../dal/services/userService")
+const userService = require("./../../dal/services/userService");
 
-router.get("/users", (req,res) => {
-    userService.getUsers(req,res);
+router.get("/users", (req, res) => {
+  userService.getUsers(req, res);
+  res.json("victory");
 });
 
 router.post("/user", (req, res) => {
-    userService.postUser(req, res);
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
+//   res.header("Access-Control-Allow-Headers", "Content-Type");
+  userService.postUser(req, res);
+  res.json(req.body);
 });
 
 module.exports = router;

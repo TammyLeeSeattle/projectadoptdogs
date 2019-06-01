@@ -9,7 +9,7 @@
     "build": "cd client && npm install && react-scripts build",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "http://localhost:3000",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TammyLeeSeattle/projectadoptdogs.git"

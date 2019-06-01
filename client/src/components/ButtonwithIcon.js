@@ -18,13 +18,18 @@ const useStyles = makeStyles(theme => ({
 	},
 }));
 
-function IconLabelButtons() {
+function IconLabelButtons(props) {
 	const classes = useStyles();
 
+	// props = {
+	// 	onClick : function
+	// }
+	console.log(props);
+	
 	return (
-		<div>
+		<div onClick={props.onClick}>
             
-			<Button variant="contained" color="primary" className={classes.button}>
+			<Button variant="contained" color="primary" className={classes.button} >
 				Create
 				<Icon className={classes.rightIcon}>person_add</Icon>
 			</Button>

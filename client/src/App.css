@@ -1,3 +1,74 @@
+body {
+  background-color: white;
+  font-family: "Fresca", sans-serif;
+}
+.navbar-fixed {
+  position: absolute;
+  z-index: 999999999;
+}
+h3.flow-text {
+  font-size: 36px;
+  color: white;
+  margin-top: 100px;
+  margin-left: 180px;
+  /* font-family: 'Fresca', sans-serif; */
+  /* font-family: 'Open Sans', sans-serif; */
+}
+h1 {
+  font-family: "Fredoka One", cursive;
+  margin-right: -100px;
+}
+#background {
+  /* margin-top: 25px; */
+  background-image: url("./repaw.png");
+  z-index: 0;
+  /* background-position-x: 2%; */
+  background-size: 100% 100%;
+  min-height: 100vh;
+  min-width: 100%;
+  /* Set up proportionate scaling */
+  /* width: 100%;
+  height: auto;  */
+  /* Set up positioning */
+  /* position: fixed;
+  top: 0;
+  left: 0;   */
+}
+h1 {
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+}
+
+#login,
+#logout {
+  margin: 10px 20px auto 20px;
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  color: gray;
+  font-size: 18px;
+  margin-top: 0;
+}
+#loginOne {
+  margin-left: 1330px;
+  margin-top: -70px;
+  z-index: 8;
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  font-size: 20px;
+  display: inline;
+}
+.i {
+  margin-left: -5px;
+}
+#pawIcon {
+  width: 40px;
+  height: 40px;
+  color: white;
+  margin-bottom: 40px;
+}
 /* STYLING FROM REACT */
 
 .App {
@@ -8,20 +79,71 @@
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
+/* ------------------------------- */
 
+.welcomeMsg img {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+.welcomeMsg span {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 40px;
+}
+#loading {
+  width: 180px;
+  height: 100px;
+  margin-top: 300px;
+}
+a nav-item {
+  font-size: 30px;
+}
+nav {
+  background-color: transparent !important;
+}
+.navbar-fixed {
+  color: #aaa !important;
+}
+ul.right.hide-on-med-and-down {
+  margin-right: 80px;
+}
+.notFoundLink {
+  margin-left: 50%;
+}
+#icon {
+  margin-left: 50%;
+}
+/* .input-field input[type=text]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+} */
+.input-field input[type="text"]:focus + label {
+  color: #3f51b5;
+}
+
+/* footer */
+body {
+  display: flex;
+  min-height: 50vh;
+  flex-direction: column;
+}
 .App-header {
-  background-color: #222;
-  padding: 20px;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
   color: white;
-  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  flex: 1 0 auto;
 }
-
-.App-intro {
-  font-size: large;
+.page-footer.grey {
+  padding-bottom: 10px;
 }
 
 @keyframes App-logo-spin {
@@ -35,15 +157,15 @@
 
 /* CUSTOM STYLING */
 
-.flow-text{
+.flow-text {
   font-size: 40px;
-  font-family: 'Fresca', sans-serif;
+  font-family: "Fresca", sans-serif;
   /* font-family: 'Open Sans', sans-serif; */
 }
 
 #background {
   /* margin-top: 25px; */
-  background-image: url('./repaw.png');
+  background-image: url("./repaw.png");
   z-index: 0;
   /* background-position-x: 2%; */
   background-size: 100% 100%;
@@ -55,83 +177,83 @@
   /* Set up positioning */
   /* position: fixed;
   top: 0;
-  left: 0;   */ 
+  left: 0;   */
 }
 
 h1 {
-  font-family: 'Fredoka One', cursive;
-  font-size:80px;
+  font-family: "Fredoka One", cursive;
+  font-size: 80px;
   font-weight: bold;
-  color:white;
+  color: white;
 }
 
 h3 {
-  color:white;
-  margin-top:150px;
-  margin-left:180px;
+  color: white;
+  margin-top: 150px;
+  margin-left: 180px;
 }
 
-#login, #logout {
-  margin:10px 20px auto 20px;
-  background:none!important;
-  border:none; 
-  padding:0!important;
-  color:gray;
-  font-size:18px;
-  margin-top:0;
+#login,
+#logout {
+  margin: 10px 20px auto 20px;
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  color: gray;
+  font-size: 18px;
+  margin-top: 0;
 }
 
- #loginOne {
-  margin-left:1330px;
-  margin-top:-70px;
+#loginOne {
+  margin-left: 1330px;
+  margin-top: -70px;
   z-index: 8;
-  background:none!important;
-  border:none; 
-  padding:0!important;
-  font-size:20px;
-  display:inline;
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  font-size: 20px;
+  display: inline;
 }
 
 .i {
-  margin-left:-5px;
+  margin-left: -5px;
 }
 
 #pawIcon {
-  width:40px;
+  width: 40px;
   height: 40px;
-  color:white;
-  margin-bottom:40px;
+  color: white;
+  margin-bottom: 40px;
 }
 
-.welcomeMsg img{
-  width:100px;
-  height:100px;
+.welcomeMsg img {
+  width: 100px;
+  height: 100px;
   float: left;
-} 
+}
 
 .welcomeMsg span {
- vertical-align: middle;
- display: inline-block;
- font-size:40px;
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 40px;
 }
 
 #loading {
-  width:180px;
-  height:100px;
-  margin-top:300px;
+  width: 180px;
+  height: 100px;
+  margin-top: 300px;
 }
 
 a nav-item {
-  font-size:24px;
+  font-size: 24px;
 }
 
-.notFoundLink{
- 
+.notFoundLink {
   margin-left: 50%;
 }
 
 #icon {
-  margin-left:50%;
+  margin-left: 50%;
 }
 
 /* color value for the main page is 32327c */
