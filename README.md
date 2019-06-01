@@ -40,6 +40,7 @@ These are some of the technologies we used:
 
 - ReactJS
 - Express
+- NodeJS
 - Materialize.css and Material-UI
 - Google Fonts
 - Azure Cosmos DB's API for MongoDB
