@@ -11,9 +11,10 @@ import Main from './components/Main';
 import Secret from './components/Secret';
 import NotFound from './components/Notfound';
 import Callback from './components/Callback';
-
+import QueryString from 'query-string'
 // PAGE COMPONENTS
 import UserSurvey from './pages/UserSurvey'
+import DogList from './pages/DogList';
 
 library.add(faExclamationCircle, faPaw);
 
@@ -40,7 +41,14 @@ class App extends Component {
 			case '/usersurvey':
 				console.log('User Survey page loaded!', this.props.location);
 				mainComp = <UserSurvey />;
-				break
+				break;
+				case '/doglist':
+					
+					const values = QueryString.parse(window.location.search);
+					console.log(values);
+
+					mainComp = <DogList chosenBreeds={values.chosenBreeds}/>;
+				break;
 
 			default:
 				mainComp = <NotFound />;

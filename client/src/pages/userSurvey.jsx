@@ -13,6 +13,11 @@ import Question from '../components/userSurveyComponent/Question';
 import quizQuestions from '../api/quizQuestions';
 import Quiz from '../components/userSurveyComponent/Quiz'
 import Result from '../components/userSurveyComponent/Result'
+import Button from '@material-ui/core/Button';
+import Icon from '@material-ui/core/Icon';
+import axios from "axios";
+
+
 
 class UserSurvey extends Component {
 	constructor(props) {
@@ -25,10 +30,12 @@ class UserSurvey extends Component {
 			answerOptions: [],
 			answer: '',
 			answersCount: {},
-			result: '',
+      result: '',
+      redirect: false
     };
     
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
+    this.redirectToDogList = this.redirectToDogList.bind(this);
   }
   
   componentDidMount() {
@@ -101,11 +108,25 @@ class UserSurvey extends Component {
   }
 
   setResults (result) {
-    if (result.length === 1) {
-      this.setState({ result: result[0] });
-    } else {
-      this.setState({ result: 'Undetermined' });
-    }
+    this.setState({ result: result[0] });
+  }
+
+  //sendResults (result) {
+  //  axios.post("/api/dogrecommendations", {
+  //    chosenBreeds: result.split(", ").join(","),
+  //  })
+  //  .then(function(res) {
+  //    console.log(res);
+  //  })
+  //  .catch(function(err) {
+  //    console.log(err)
+  //  });
+  //}
+
+  redirectToDogList(){
+    let queryString = "chosenBreeds=" + this.state.result;
+
+    window.location.href = `/doglist?${queryString}`; 
   }
 
   renderQuiz() {
@@ -121,7 +142,16 @@ class UserSurvey extends Component {
     );
   }
   renderResult() {
-    return <Result quizResult={this.state.result} />;
+    return (
+      
+      <div>
+        <Result quizResult={this.state.result} />
+        <Button variant="contained" color="primary" onClick={this.redirectToDogList}>
+				Search For Adoptable Dogs
+				<Icon >search</Icon>
+			</Button>
+      </div>
+    );
   }
 
   render() {

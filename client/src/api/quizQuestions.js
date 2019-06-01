@@ -3,16 +3,24 @@ var quizQuestions = [
         question: "What is your current relationship with dogs?",
         answers: [
             {
-                type: "Golden Retriever",
-                content: "This would be my first dog."
+                type: "Chihuahua, Shih Tzu, Dachshund, Maltese, Lhasa Apso, Yorkshire Terrier",
+                content: "This is my first dog and I'm a little nervous"
             },
             {
-                type: "Border Collie",
-                content: "I do not have a dog, but I have experience with dogs."
+                type: "American Bulldog, Pit Bull Terrier, American Staffordshire Terrier",
+                content: "This is my first dog and I'm up for any challenge"
             },
             {
-                type: "Corgi",
-                content: "I have one or more dogs currently."
+                type: "Shepherd, Australian Shepherd, Border Collie, Cattle Dog, Husky",
+                content: "I do not have a dog, but I have lots of experience with dogs"
+            },
+            {
+                type: "Golden Retriever, Labrador Retriever",
+                content: "I do not have a dog, but I have a little experience with dogs"
+            },
+            {
+                type: "Beagle, Hound",
+                content: "I have one or more dogs currently"
             }
         ]
     },
@@ -20,67 +28,149 @@ var quizQuestions = [
         question: "Pick the option that best describes your future dog's home:",
         answers: [
             {
-                type: "Golden Retriever",
-                content: "A small amount of outdoor space."
+                type: "Chihuahua, Shih Tzu, Dachshund, Maltese, Lhasa Apso, Yorkshire Terrier",
+                content: "No outdoor space"
             },
             {
-                type: "Border Collie",
-                content: "A large amount of outdoor space."
+                type: "American Bulldog, Pit Bull Terrier, American Staffordshire Terrier",
+                content: "A small amount of outdoor space"
             },
             {
-                type: "Corgi",
-                content: "Very little to no outdoor space."
+                type: "Beagle, Hound",
+                content: "A medium amount of outdoor space"
+            },
+            {
+                type: "Golden Retriever, Labrador Retriever",
+                content: "A large amount of outdoor space"
+            },
+            {
+                type: "Shepherd, Australian Shepherd, Border Collie, Cattle Dog, Husky",
+                content: "A very large amount of outdoor space"
             }
         ]
     },
     {
-        question: "How do you feel about exercising with your dog?",
+        question: "Describe how often the dog will be active!",
         answers: [
             {
-                type: "Golden Retriever",
-                content: "I will be spending a medium amount of time exercising my dog."
+                type: "Chihuahua, Shih Tzu, Dachshund, Maltese, Lhasa Apso, Yorkshire Terrier",
+                content: "My dog will have one or less hours a week being active"
             },
             {
-                type: "Border Collie",
-                content: "I will be spending a lot amount of time exercising my dog."
+                type: "American Bulldog, Pit Bull Terrier, American Staffordshire Terrier",
+                content: "My dog will have one to three hours a week being active"
             },
             {
-                type: "Corgi",
-                content: "I will be spending a little amount of time exercising my dog."
+                type: "Beagle, Hound",
+                content: "My dog will have three to five hours a week being active"
+            },
+            {
+                type: "Golden Retriever, Labrador Retriever",
+                content: "My dog will have five to eight hours a week being active"
+            },
+            {
+                type: "Shepherd, Australian Shepherd, Border Collie, Cattle Dog, Husky",
+                content: "My dog will have eight or more hours a week being active"
             }
         ]
     },
     {
-        question: "How do you feel about dog's barking?",
+        question: "Do you have small children and/or any cats?",
         answers: [
             {
-                type: "Golden Retriever",
-                content: "I do not mind occasional barking."
+                type: "Chihuahua, Shih Tzu, Dachshund, Maltese, Lhasa Apso, Yorkshire Terrier",
+                content: "No"
             },
             {
-                type: "Border Collie",
-                content: "I do not like dogs barking."
+                type: "American Bulldog, Pit Bull Terrier, American Staffordshire Terrier",
+                content: "No"
             },
             {
-                type: "Corgi",
-                content: "I have a high tolerance for barking."
+                type: "Beagle, Hound",
+                content: "Yes"
+            },
+            {
+                type: "Golden Retriever, Labrador Retriever",
+                content: "Yes"
+            },
+            {
+                type: "Shepherd, Australian Shepherd, Border Collie, Cattle Dog, Husky",
+                content: "Yes"
             }
         ]
     },
     {
-        question: "How would you describe the activity level in your home?",
+        question: "How would you describe the daily activity level in your home?",
         answers: [
             {
-                type: "Golden Retriever",
-                content: "High"
+                type: "Chihuahua, Shih Tzu, Dachshund, Maltese, Lhasa Apso, Yorkshire Terrier",
+                content: "Very quiet"
             },
             {
-                type: "Border Collie",
-                content: "Low"
+                type: "American Bulldog, Pit Bull Terrier, American Staffordshire Terrier",
+                content: "Quiet most of the time"
             },
             {
-                type: "Corgi",
-                content: "Medium"
+                type: "Beagle, Hound",
+                content: "Quiet some of the time"
+            },
+            {
+                type: "Golden Retriever, Labrador Retriever",
+                content: "Mostly busy and active"
+            },
+            {
+                type: "Shepherd, Australian Shepherd, Border Collie, Cattle Dog, Husky",
+                content: "Very busy and active"
+            }
+        ]
+    },
+    {
+        question: "How do you feel about barking?",
+        answers: [
+            {
+                type: "Shepherd, Australian Shepherd, Border Collie, Cattle Dog, Husky",
+                content: "I prefer little to no barking"
+            },
+            {
+                type: "American Bulldog, Pit Bull Terrier, American Staffordshire Terrier",
+                content: "I do not mind a little bit of barking"
+            },
+            {
+                type: "Beagle, Hound",
+                content: "I do not mind barking"
+            },
+            {
+                type: "Golden Retriever, Labrador Retriever",
+                content: "I can tolerate a good amount of barking"
+            },
+            {
+                type: "Chihuahua, Shih Tzu, Dachshund, Maltese, Lhasa Apso, Yorkshire Terrier",
+                content: "I enjoy when dogs are vocal"
+            }
+        ]
+    },
+    {
+        question: "What's the top trait you're looking for in your new dog?",
+        answers: [
+            {
+                type: "Shepherd, Australian Shepherd, Border Collie, Cattle Dog, Husky",
+                content: "A loyal dog that will protect myself and/or my family"
+            },
+            {
+                type: "American Bulldog, Pit Bull Terrier, American Staffordshire Terrier",
+                content: "A dog that you can learn and grow with"
+            },
+            {
+                type: "Beagle, Hound",
+                content: "A dog that is adaptable to almost any situation"
+            },
+            {
+                type: "Golden Retriever, Labrador Retriever",
+                content: "A playful dog that loves everyone"
+            },
+            {
+                type: "Chihuahua, Shih Tzu, Dachshund, Maltese, Lhasa Apso, Yorkshire Terrier",
+                content: "A dog that has a lot of personality that will be devoted to me"
             }
         ]
     }
