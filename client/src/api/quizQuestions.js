@@ -80,19 +80,7 @@ var quizQuestions = [
             {
                 type: "Chihuahua, Shih Tzu, Dachshund, Maltese, Lhasa Apso, Yorkshire Terrier",
                 content: "No"
-            },
-            {
-                type: "American Bulldog, Pit Bull Terrier, American Staffordshire Terrier",
-                content: "No"
-            },
-            {
-                type: "Beagle, Hound",
-                content: "Yes"
-            },
-            {
-                type: "Golden Retriever, Labrador Retriever",
-                content: "Yes"
-            },
+            },           
             {
                 type: "Shepherd, Australian Shepherd, Border Collie, Cattle Dog, Husky",
                 content: "Yes"

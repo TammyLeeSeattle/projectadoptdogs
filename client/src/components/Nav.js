@@ -49,7 +49,7 @@ function Nav(props) {
             <ul className="right hide-on-med-and-down ">
               <li>
                 <a href="/about" 
-                onClick={()=> props.hangledPageChange ('About')} className={props.currentPage === 'About'? 'nav-link active': 'nav-link'}>About Us</a>
+                onClick={()=> props.hangledPageChange ('About')} className={'indigo-text text-darken-4 ' + (props.currentPage === 'About'? 'nav-link active': 'nav-link')}>About Us</a>
               </li>
               {/* <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="medium material-icons right">account_circle</i></a></li> */}
 

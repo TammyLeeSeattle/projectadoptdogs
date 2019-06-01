@@ -7,14 +7,18 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+var decode = require('unescape');
 
 const useStyles = makeStyles({
   card: {
     maxWidth: 345,
+    padding: 1,
+    marginTop: 15
+
   },
 });
 
-function ImgMediaCard() {
+function ImgMediaCard(props) {
   const classes = useStyles();
 
   return (
@@ -24,25 +28,21 @@ function ImgMediaCard() {
           component="img"
           alt="Contemplative Reptile"
           height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image={props.dog.photos.length > 0 ? props.dog.photos[0]['medium'] : 'https://www.onlygfx.com/wp-content/uploads/2017/12/dog-silhouette-1.png'}
           title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            {props.dog.name}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+          {decode(props.dog.description)}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+            <a href={props.dog.url} target="_blank">Learn More</a>      
         </Button>
       </CardActions>
     </Card>

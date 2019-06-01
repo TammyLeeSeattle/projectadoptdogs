@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../App.css';
 import logo from '../logo.svg';
 import axios from "axios";
+import DogCard from '../components/DogCard'
+import Grid from '@material-ui/core/Grid';
 
 class DogList extends Component {
     constructor(props) {
@@ -41,12 +43,22 @@ class DogList extends Component {
           }
           return (
               <div>
-                  <ul>
-                    {this.state.data.animals.map((dog) => {          
+                  <Grid
+                    container
+                    direction="row"
+                    justify="space-evenly"
+                    alignItems="flex-start"
+                   
+                    >
+                 {this.state.data.animals.map((dog) => {          
                     // Return the element. Also pass key     
-                        return (<li>{dog.name}</li>) 
+                        return (
+                            <Grid item xs={4}>
+                            <DogCard dog={dog} />
+                            </Grid>
+                        ) 
                     })}
-                     </ul>
+                    </Grid>
               </div>
           )
       }
