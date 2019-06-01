@@ -15,7 +15,7 @@ class Main extends Component {
     return (
      <div>
             <h1>
-                A Dog's Love
+                A Dog's Home
                 <img src={icon} id='pawIcon'alt='icon'></img>
             </h1>
             <h3 className='flow-text'> One in Five dogs<br/>
