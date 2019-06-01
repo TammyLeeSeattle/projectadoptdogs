@@ -22,9 +22,11 @@
 - [Acknowledgments](#acknowledgments)
 
 ## Introduction
-A sad truth is that one in five dogs that enters a shelter will never end up leaving. Even with the best intentions, most people are unaware that by returning a dog to a shelter adds almost a 50% chance of contributing to a dog not having a chance to be adopted again.
+A sad truth is that one in five dogs that enters a shelter will never end up leaving. In the United States alone, the ASPCA estimates that 670,000 dogs are euthanized every year. Even with the best intentions, most people are unaware that by returning a dog to a shelter adds almost a 50% chance of contributing to a dog not having a chance to be adopted again. Because of this, it's extremely important that we get matches right the first time.
 
-Instead, we hope to provide an opportunity for people interesting in providing a dog a home to select a dog that's right for their life -- not just what is appealing on paper!
+To aid this, we hope to provide an opportunity for people interesting in providing a dog a home to select a dog that's right for their life -- not just what is appealing on paper!
+
+Our mission is to find the *right* home for every dog in the United States. We can do it together!
 
 ## Features
 Tasked with building a MERN (Mongo, Express, React and Node) application, we decided to make things even harder on ourselves!
