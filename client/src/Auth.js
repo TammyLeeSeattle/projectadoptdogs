@@ -20,7 +20,7 @@ export default class Auth {
     domain:'dev-67ou39ym.auth0.com',
     clientID: 'ajhhOs9tIUxyIh7kchUZWN58Y9zItDlI',
     audience: 'https://dev-67ou39ym.auth0.com/userinfo',
-    redirectUri: 'http://localhost:3000/callback',
+    redirectUri: process.env.AUTH_REDIRECTURI,
     responseType: 'token id_token', 
     scope: 'openid profile'
   });
