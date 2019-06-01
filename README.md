@@ -19,6 +19,7 @@
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies](#technologies)
+- [Future](#future)
 - [Acknowledgments](#acknowledgments)
 
 ## Introduction
@@ -49,6 +50,18 @@ These are some of the technologies we used:
   - Mongoose
 - Axios
 - Petfinder v2.0 API
+
+## Future
+These are things we wished we could have gotten to, but hey, we've only got two coders 👩‍💻👩‍💻
+
+- Custom account creation
+  - Accounts that had an “adopter” Profile that could be submitted to shelters
+  - Favorite dogs
+  - Favorite shelters
+- An “intelligent” recommendation engine
+- Geographic support
+- Google Analytics (for shelter insight into adopters)
+- Email notifications
 
 ## Acknowledgements
 
