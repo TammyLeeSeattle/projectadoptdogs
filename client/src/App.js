@@ -15,7 +15,7 @@ import Auth from './Auth';
 import Callback from './components/Callback';
 import QueryString from 'query-string'
 // PAGE COMPONENTS
-import UserSurvey from './pages/UserSurvey'
+import UserSurvey from './pages/userSurvey'
 import DogList from './pages/DogList';
 import Nav from './components/Nav';
 import Jumbotron from './components/UserInfo';
