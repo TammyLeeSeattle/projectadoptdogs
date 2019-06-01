@@ -23,8 +23,10 @@ class Main extends Component {
                 <br/>
                 <br/>
                 Let's adopt better!
+                <br/><br/>
+                <a class="waves-effect waves-light btn">Get Started</a>
             </h3>
-            </div>
+      </div>
     );
   }
 }
