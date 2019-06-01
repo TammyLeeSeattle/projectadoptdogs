@@ -20,7 +20,7 @@ h1 {
 }
 #background {
   /* margin-top: 25px; */
-  background-image: url("./repaw.png");
+  background-color: #2e2e7d;
   z-index: 0;
   /* background-position-x: 2%; */
   background-size: 100% 100%;
@@ -165,7 +165,8 @@ main {
 
 #background {
   /* margin-top: 25px; */
-  background-image: url("./repaw.png");
+  
+  background-color: #2e2e7d;
   z-index: 0;
   /* background-position-x: 2%; */
   background-size: 100% 100%;
@@ -178,6 +179,17 @@ main {
   /* position: fixed;
   top: 0;
   left: 0;   */
+}
+
+
+.background-image {
+  background-image: url("./repaw.png");
+}
+
+.background-none {
+  background-image:none !important;
+  background-color: #2e2e7d;
+  z-index: -99;
 }
 
 h1 {
