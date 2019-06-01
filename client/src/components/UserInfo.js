@@ -60,7 +60,7 @@ function UserInfo(props) {
           <p>
             <label>
               <input type="checkbox" />
-              <span>I agree</span>
+              <span>I agree to the Terms and Conditions of this website.</span>
             </label>
           </p>
           <IconLabelButtons onClick={props.onClick} />

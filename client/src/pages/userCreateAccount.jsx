@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <h3>React Form</h3>
+        <h3>A Dog's Home</h3>
         <UserInfo />
       </div>
     );
