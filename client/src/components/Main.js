@@ -4,33 +4,16 @@ import Nav from "./Nav";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import icon from '../paw_icon.png'
-import AboutUs from "./AboutUs";
+
 
 class Main extends Component {
   state = {
     currentPage: 'Home'
   };
 
-  handlePageChange = page => {
-    this.setState({currentPage:page});
-  };
-
-  renderPage = ()=> {
-    if(this.state.currentPage === 'About'){
-      return <AboutUs/>
-    } else {
-      return <Main/>
-    }
-  };
   render() { 
     return (
-      <div id='background' className='responsive-img'>
-          <div className="container-fluid">
-            <Nav {...this.props}
-            currentPage={this.state.currentPage}
-            handlePageChange={this.state.handlePageChange}
-              />
-            {this.renderPage()}
+     <div>
             <h1>
                 A Dog's Love
                 <img src={icon} id='pawIcon'alt='icon'></img>
@@ -39,8 +22,7 @@ class Main extends Component {
                 <br/>
                 Let's adopt better!
             </h3>
-        </div>
-      </div>
+            </div>
     );
   }
 }

@@ -11,7 +11,6 @@ class Secret extends Component {
   
     return (
       <div>
-        <Nav {...this.props} />
         <div className="container">
           <div className="welcomeMsg" style={{ marginTop: 20 }}>
             <span className="flow-text">
